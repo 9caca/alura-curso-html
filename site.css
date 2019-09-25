@@ -8,11 +8,14 @@ body{
 h1 {
 	font-size: 30px;
 	font-family: sans-serif;
+	text-transform: uppercase;
 }
 
 h2 {
 	font-size: 30px;
 	font-family: sans-serif;
+	clear: both;
+	font-style: bold;
 }
 
 main h1 {
@@ -22,6 +25,7 @@ main h1 {
 	color: #FFF;
 	padding: 25px;
 	border-bottom: 10px solid #000;
+	text-transform: uppercase;
 }
 
 main a {
@@ -36,6 +40,18 @@ div {
     width: 720px;
     margin-left: auto;
     margin-right: auto;
+}
+
+article {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+main{
+	float: left;
+	width: 85%;
+	padding: 80px;
 }
 
 strong {
@@ -58,6 +74,15 @@ blockquote {
 	width: 250px;
 	margin: 20px 40px;
 	box-sizing: border-box;
+	font-style: italic;
+}
+
+.fiat{
+	float: right;
+}
+
+.petrobras{
+	float: left;
 }
 
 aside {
@@ -65,23 +90,74 @@ aside {
     color: #F2FFFC;
     padding: 20px;
     text-align: center;
+    float: right;
+    clear: right;
+    box-sizing: border-box;
+    width: 15%;
+    border-bottom: 10px solid #000;
+    border-left: 10px solid #000;
+    position: absolute;
+    top: 310px;
+    right: 0;
 }
 
-aside h1 {
+img{
+	float: right;
+	border-bottom: 10px solid #000;
+	border-left: 10px solid #000;
+	box-sizing: border-box;
+}
+
+.minha-foto{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+nav h1 {
     font-size: 30px;
     margin-bottom: 25px;
 }
 
-aside li{
+nav a {
+	color: inherit;
+	text-transform: lowercase;
+}
+
+.icones-sociais li{
 	display: inline-block;
 }
 
-footer {
+.icones-sociais a{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.github{
+	background-image: url(github.png);
+}
+
+.twitter{
+	background-image: url(twitter.png);
+}
+
+.linkedin{
+	background-image: url(linkedin.png);
+}
+
+.rodape-pagina {
 	background-color: #000;
 	color: #F2FFFC;
 	padding: 20px;
 }
 
-nav a {
-	color: #F2FFFC;
+footer{
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
+
